@@ -50,7 +50,7 @@ void sendToController(BreachType breachType)
 
 void sendToEmail(BreachType breachType) 
 {
-  const char* recepient = "a.b@c.com";
+  cchar* recepient = "a.b@c.com";
 
   if (breachType != NORMAL) {
      const char* printBreachType = (breachType == TOO_LOW) ? "low" : "high";
