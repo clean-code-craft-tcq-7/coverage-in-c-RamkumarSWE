@@ -53,7 +53,7 @@ void sendToEmail(BreachType breachType)
   const char* recepient = "a.b@c.com";
 
   if (breachType != NORMAL) {
-     const char* BreachType = (breachType == TOO_LOW) ? "low" : "high";
+     char* BreachType = (breachType == TOO_LOW) ? "low" : "high";
      printf("To: %s\n", recepient);
      printf("Hi, the temperature is too %s\n", BreachType);
    }
