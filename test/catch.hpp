@@ -10284,7 +10284,7 @@ namespace Catch {
 
 namespace Catch {
 
-    class Context : public IMutableContext, NonCopyable {
+class Context : public IMutableContext, NonCopyable {
 
     public: // IContext
         IResultCapture* getResultCapture() override {
