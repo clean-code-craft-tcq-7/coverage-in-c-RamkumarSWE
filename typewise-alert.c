@@ -16,7 +16,7 @@ BreachType classifyTemperatureBreach(
   CoolingType coolingType, double temperatureInC) 
   {
   int lowerLimit = 0;
-  
+  int upperLimit = 0;
   upperLimit = cooling_type_setLimit(coolingType);
   
   return inferBreach(temperatureInC, 0, upperLimit); 
