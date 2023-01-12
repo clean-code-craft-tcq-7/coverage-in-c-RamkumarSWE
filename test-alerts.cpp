@@ -22,7 +22,7 @@ TEST_CASE("infers the breach according to cooling type") {
 }
 
 TEST_CASE("function to test upper limit value based on the cooling type") {
-  REQUIRE(setLimitsBasedOnCoolingType(PASSIVE_COOLING) == 35);
-  REQUIRE(setLimitsBasedOnCoolingType(HI_ACTIVE_COOLING) == 45);
-  REQUIRE(setLimitsBasedOnCoolingType(MED_ACTIVE_COOLING) == 40);
+  REQUIRE(cooling_type_setLimit(PASSIVE_COOLING) == 35);
+  REQUIRE(cooling_type_setLimit(HI_ACTIVE_COOLING) == 45);
+  REQUIRE(cooling_type_setLimit(MED_ACTIVE_COOLING) == 40);
 }
