@@ -24,7 +24,7 @@ BreachType classifyTemperatureBreach(
 
 int cooling_type_setLimit(CoolingType coolingType)
 {
-    int upperLimit = (coolingType == PASSIVE_COOLING) ? 35  ((coolingType == HI_ACTIVE_COOLING) ?  45 : 40 );
+    int upperLimit = (coolingType == PASSIVE_COOLING) ? 35 : ((coolingType == HI_ACTIVE_COOLING) ?  45 : 40 );
     return upperLimit;
 }
 
